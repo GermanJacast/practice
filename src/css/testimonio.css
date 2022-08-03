@@ -1,0 +1,40 @@
+.container-testimonio{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container-test{
+    width: 80%;
+    padding: 10px;
+    margin: 1% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 3px 13px 1px(#000);
+}
+.container-test .container-test-image .test-img{
+    width: auto;
+    height: 100%;
+}
+.container-test .container-test-content{
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    font-family: Lato, sans-serif;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+.container-test .container-test-content .name{
+    font-size: 1.3em;
+}
+.container-test .container-test-content .cargo{
+    font-size: 1.3em;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+.container-test .container-test-content .text{
+    font-size: 1.1em;
+    text-align: justify;
+}

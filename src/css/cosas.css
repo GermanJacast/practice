@@ -1,0 +1,22 @@
+.container-cosas{
+    width: 100%;
+    text-align: center;
+}
+.container-cosas a{
+    display: block;
+    margin: 1% 0;
+}
+.container-cosas a:link, .container-cosas a:visited{
+    color: #000;
+    text-decoration: none;
+}
+.container-cosas a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+/*  */
+.container-cosas a.active{
+    font-weight: bold;
+    pointer-events: none;
+    color: #fff;
+  }
