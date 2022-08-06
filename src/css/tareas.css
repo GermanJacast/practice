@@ -1,0 +1,90 @@
+.tarea{
+    width: 600px;
+    min-height: 500px;
+    background-color: #19315f;
+    padding: 25px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.container-tarea{
+    width: 500px;
+    min-height: 65px;
+    background-color: #1b1b32;
+    margin: 1% 0;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+/* cada 3 se pondra ese */
+.container-tarea:nth-child(3n +1){
+    background-color: #1b1b32;
+}
+.container-tarea:nth-child(3n +2){
+    background-color: #2a2a40;
+}
+.container-tarea:nth-child(3n +3){
+    background-color: #3b3b4f;
+}
+.container-tarea .tarea-text{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+    color: #fff;
+}
+.container-tarea .tarea-icono{
+    width: 25px;
+    height: 25px;
+    margin: 1%;
+    color: #fff;
+}
+.container-tarea.completed{
+   background-color: #2fc18b;
+   text-decoration: line-through;
+}
+
+/* 
+ */
+.tarea-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.tarea-input{
+    width: 300px;
+    height: 50px;
+    font-size: 1em;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 25px 0 0 25px;
+    border: 2px solid #000;
+    outline: none;
+}
+.tarea-button{
+    padding: 2%;
+    height: 50px;
+    font-size: 1em;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+    text-transform: capitalize;
+}
+.tarea-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2%;
+}

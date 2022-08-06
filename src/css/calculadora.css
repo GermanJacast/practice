@@ -1,22 +1,22 @@
 .container-calculadora{
     margin: auto;
+    width: 100%;
 }
 .calculadora{
-    width: 400px;
-    height: 600;
-    padding: 14px;
-    background-color: #99c9ff;
+    margin: auto;
+    width: 50%;
+    padding: 2%;
+    background-color: #3d86d9;
     border-radius: 25px;
     border: 5px solid #fff;
 }
 .calculadora .fila{
-    margin: 4px;
+    margin: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .boton-calc{
-    height: 83px;
     display: flex;
     flex: 1 1;
     justify-content: center;
@@ -27,7 +27,7 @@
     color: #fff;
     border-radius: 25px;
     border: 2px solid #fff;
-    margin: 4px;
+    margin: 2%;
     cursor: pointer;
     user-select: none;
 }
@@ -36,16 +36,18 @@
     color: #000;
 }
 .operador{
-    background-color: #00471b;
+    background-color: #c1c1c1;
+    color: #000;
 }
 .operador:hover{
     background-color: #000;
     color: #fff;
 }
 .input{
-    height: 75px;
+    min-width: auto;
+    height: 76px;
     border-radius: 25px;
-    margin: 20px;
+    margin: 4%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -53,12 +55,13 @@
     font-weight: bold;
     font-size: 2em;
     color: #fff;
-    padding: 1%;
+    padding: 3%;
     margin: 1px solid #888;
     box-shadow: -1px 4px 1px 1px #fff;
+    overflow-x: hidden;
 }
 .boton-clear{
-    height: 80px;
+    height: 76px;
     font-size: 1.6em;
     display: flex;
     flex: 1;

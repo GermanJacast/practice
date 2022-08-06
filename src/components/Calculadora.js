@@ -2,14 +2,6 @@ import '../css/calculadora.css';
 import {useState} from 'react';
 import {evaluate} from 'mathjs';
 
-const Pantalla = ({input}) => {
-  return(
-    <div className='input'>
-      {input}
-    </div>
-  )
-};
-
 const BotonClear = (props) => (
   <div className='boton-clear' onClick={props.manejarClick}>
     {props.children}
@@ -17,7 +9,6 @@ const BotonClear = (props) => (
 )
 
 const Boton = (props) => {
-
   const operador = valor => {
     return isNaN(valor) && (valor !== '.') && (valor !== '=');
   };
@@ -29,18 +20,27 @@ const Boton = (props) => {
     </div>
   )
 };
+
+const Pantalla = ({input}) => {
+  return(
+    <div className='input'>
+      {input}
+    </div>
+  )
+};
 export const Calculadora = () => {
-  const [input, setInput] = useState('');
+  const [inp, setInput] = useState('');
 
   const agregarInput = val => {
-    setInput(input + val);
+    setInput(inp + val);
   };
-
+ 
   const calcularResultado = () =>{
-    if(input){
-      setInput(evaluate(input));
+    if(inp){
+      // mathjs
+      setInput(evaluate(inp));
     }else{
-      alert("Ingrse valores para los calculos")
+      alert("Ingrese valores para los calculos")
     }
     
   };
@@ -49,7 +49,7 @@ export const Calculadora = () => {
     <div className='container-calculadora'>
         <h1 className="tittle">Calculadora</h1>
         <div className='calculadora'>
-          <Pantalla input={input}/>
+          <Pantalla input={inp}/>
           <div className='fila'>
             <Boton manejarClick={agregarInput}>1</Boton>
             <Boton manejarClick={agregarInput}>2</Boton>

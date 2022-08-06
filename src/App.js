@@ -7,6 +7,7 @@ import { CosaDetails } from './components/CosasDetails';
 import { Login } from './components/Login';
 import { Contador } from './components/ContadorClick';
 import {Calculadora} from './components/Calculadora';
+import { Tareas } from './components/Tareas';
 
 import { Link, NavLink, Route, Routes, useParams, Outlet, Navigate, useNavigate, useLocation} from 'react-router-dom'
 
@@ -32,6 +33,7 @@ function App() {
               <li><NavLink to='/contenido'>Contenido</NavLink></li>
               <li><NavLink to='/contadorClick'>Contador</NavLink></li>
               <li><NavLink to='/calculadora'>Calculadora</NavLink></li>
+              <li><NavLink to='/tarea'>Tareas</NavLink></li>
             </ul>
           </nav>
         </div>
@@ -50,6 +52,7 @@ function App() {
         <Route path='/testimonio' element={<Testimonios />} />
         <Route path='/contadorClick' element={<Contador />} />
         <Route path='/calculadora' element={<Calculadora />} />
+        <Route path='/tarea' element={<Tareas/>}/>
         <Route path='/login' element={<Login />} />
         {/* 404 soft */}
         <Route path='*' element={<h1>Not Found</h1>} />
